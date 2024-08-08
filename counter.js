@@ -37,11 +37,3 @@ document.getElementById('inc2').onclick = function() {
   document.getElementById('numbers2').innerHTML = count2;
 }
 
-
-//task2-change bg color
-
-let button = document.getElementById('bttn-1');
-
-button.addEventListener("click", function() {
-    document.body.style.backgroundColor = "blue";
-});
