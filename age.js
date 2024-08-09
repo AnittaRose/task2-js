@@ -20,11 +20,17 @@ console.log(`${day}.${month}.${year}`);
 
     let inputarr = input.split(`-`);
     console.log('inputarr',inputarr);
-
-    let age = '';
-    let agedisplay = document.getElementById('age-display');
-    age=year-inputarr[0];
-    console.log('age',age);
-    agedisplay.innerHTML=age;
+   if(inputarr == 0){
+      agedisplay.innerHTML = inputarr;
+   }
+    else{
+      let age = '';
+      let agedisplay = document.getElementById('age-display');
+      age=year-inputarr[0];
+      console.log('age',age);
+      agedisplay.innerHTML=age;
+   }
+   console.log(input.value);
  }
  
+
