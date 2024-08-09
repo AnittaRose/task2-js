@@ -57,5 +57,64 @@ document.getElementById('sub').onclick = function () {
         console.log(num);
     }
     to.innerHTML =`Answer : ${num}`;
+
+
+
+
+    if(select === "meter" && sel === "killometers") {
+        num=num/1000;
+        console.log(num);
+    }else if (select === "killometers" && sel === "meter"){
+        num=num*1000;
+        console.log(num);
+    }
+    to.innerHTML =`Answer : ${num}`;
+
+
+
+
+    if(select === "yards" && sel === "meter") {
+        num=num*0.9144;
+        console.log(num);
+    }else if (select === "meter" && sel === "yards"){
+        num=num*1.09361;
+        console.log(num);
+    }
+    to.innerHTML =`Answer : ${num}`;
+
+
+
+
+
+    if(select === "feet" && sel === "miles") {
+        num=num*1.8939;
+        console.log(num);
+    }else if (select === "miles" && sel === "feet"){
+        num=num*5,280;
+        console.log(num);
+    }
+    to.innerHTML =`Answer : ${num}`;
+
+
+
+    if(select === "feet" && sel === "yards") {
+        num=num/3;
+        console.log(num);
+    }else if (select === "yards" && sel === "feet"){
+        num=num*3;
+        console.log(num);
+    }
+    to.innerHTML =`Answer : ${num}`;
+
+
+
+    if(select === "meter" && sel === "miles") {
+        num=num/1,609.34;
+        console.log(num);
+    }else if (select === "miles" && sel === "meter"){
+        num=num*1,609.34;
+        console.log(num);
+    }
+    to.innerHTML =`Answer : ${num}`;
 }
 
